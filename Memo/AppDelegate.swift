@@ -17,8 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // Override point for customization after application launch.
     VENTouchLock .setShouldUseTouchID(true)
-//    VENTouchLock .sharedInstance() .setKeychainService("TouchLock", keychainAccount: "MyAccount", touchIDReason: <#String!#>, passcodeAttemptLimit: <#UInt#>, splashViewControllerClass: <#AnyClass!#>)
-
+    var touchLock = VENTouchLock .sharedInstance()
+    touchLock .setKeychainService("TouchLock", keychainAccount: "MyAccount", touchIDReason: "please touch the Home Button", passcodeAttemptLimit: 6, splashViewControllerClass: MMTouchLockSplashViewController.self)
     return true
   }
 

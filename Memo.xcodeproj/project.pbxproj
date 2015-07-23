@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2085DAC31B6141F0003A8263 /* MMTouchLockSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085DAC21B6141F0003A8263 /* MMTouchLockSplashViewController.swift */; };
 		2F34C921A92C41F81D0B2EC8 /* libPods-Memo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29AA4E1A946FF369227E6AAF /* libPods-Memo.a */; };
 		B270041A1B60ECCB00B1BEA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27004191B60ECCB00B1BEA7 /* AppDelegate.swift */; };
 		B270041C1B60ECCB00B1BEA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B270041B1B60ECCB00B1BEA7 /* ViewController.swift */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2085DAC21B6141F0003A8263 /* MMTouchLockSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMTouchLockSplashViewController.swift; sourceTree = "<group>"; };
+		2085DAC41B61434B003A8263 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		29AA4E1A946FF369227E6AAF /* libPods-Memo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Memo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A6F8D927F4A9A46ECBDB276 /* Pods-Memo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Memo/Pods-Memo.release.xcconfig"; sourceTree = "<group>"; };
 		ADE2D46E64A63F19BE8C7817 /* Pods-Memo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Memo/Pods-Memo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -62,6 +65,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2085DABF1B6141AB003A8263 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				2085DAC01B6141AB003A8263 /* Mainframe */,
+				2085DAC11B6141AB003A8263 /* TouchLock */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		2085DAC01B6141AB003A8263 /* Mainframe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mainframe;
+			sourceTree = "<group>";
+		};
+		2085DAC11B6141AB003A8263 /* TouchLock */ = {
+			isa = PBXGroup;
+			children = (
+				2085DAC21B6141F0003A8263 /* MMTouchLockSplashViewController.swift */,
+			);
+			path = TouchLock;
+			sourceTree = "<group>";
+		};
 		406FF9D28C3AB5B0B865B71E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +101,7 @@
 		7CFEA80F2C73C6BC4FF955C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2085DAC41B61434B003A8263 /* Security.framework */,
 				29AA4E1A946FF369227E6AAF /* libPods-Memo.a */,
 			);
 			name = Frameworks;
@@ -102,11 +130,7 @@
 		B27004161B60ECCB00B1BEA7 /* Memo */ = {
 			isa = PBXGroup;
 			children = (
-				B27004191B60ECCB00B1BEA7 /* AppDelegate.swift */,
-				B270041B1B60ECCB00B1BEA7 /* ViewController.swift */,
-				B270041D1B60ECCB00B1BEA7 /* Main.storyboard */,
-				B27004201B60ECCB00B1BEA7 /* Images.xcassets */,
-				B27004221B60ECCB00B1BEA7 /* LaunchScreen.xib */,
+				2085DABF1B6141AB003A8263 /* Module */,
 				B27004171B60ECCB00B1BEA7 /* Supporting Files */,
 			);
 			path = Memo;
@@ -115,6 +139,11 @@
 		B27004171B60ECCB00B1BEA7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B27004191B60ECCB00B1BEA7 /* AppDelegate.swift */,
+				B270041B1B60ECCB00B1BEA7 /* ViewController.swift */,
+				B270041D1B60ECCB00B1BEA7 /* Main.storyboard */,
+				B27004201B60ECCB00B1BEA7 /* Images.xcassets */,
+				B27004221B60ECCB00B1BEA7 /* LaunchScreen.xib */,
 				B27004181B60ECCB00B1BEA7 /* Info.plist */,
 				B27004391B61225E00B1BEA7 /* Memo-Bridging-Header.h */,
 			);
@@ -275,6 +304,7 @@
 			files = (
 				B270041C1B60ECCB00B1BEA7 /* ViewController.swift in Sources */,
 				B270041A1B60ECCB00B1BEA7 /* AppDelegate.swift in Sources */,
+				2085DAC31B6141F0003A8263 /* MMTouchLockSplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
