@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		2085DAC31B6141F0003A8263 /* MMTouchLockSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085DAC21B6141F0003A8263 /* MMTouchLockSplashViewController.swift */; };
 		2F34C921A92C41F81D0B2EC8 /* libPods-Memo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29AA4E1A946FF369227E6AAF /* libPods-Memo.a */; };
+		B201C2961B660FF8004CA10C /* MMNoteCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201C2901B660FF8004CA10C /* MMNoteCollectionViewController.swift */; };
+		B201C2981B660FF8004CA10C /* Note.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B201C2941B660FF8004CA10C /* Note.storyboard */; };
+		B201C29A1B66109E004CA10C /* NoteList.plist in Resources */ = {isa = PBXBuildFile; fileRef = B201C2991B66109E004CA10C /* NoteList.plist */; };
 		B24623D41B61D93F00F2FE32 /* MMTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24623D31B61D93F00F2FE32 /* MMTabBarController.swift */; };
 		B24623D61B61DA3E00F2FE32 /* MMNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24623D51B61DA3E00F2FE32 /* MMNavigationController.swift */; };
-		B24623DF1B61E99100F2FE32 /* MMNoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24623DD1B61E99100F2FE32 /* MMNoteTableViewController.swift */; };
-		B24623E01B61E99100F2FE32 /* Note.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B24623DE1B61E99100F2FE32 /* Note.storyboard */; };
-		B24623E21B621DD900F2FE32 /* MMNoteCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24623E11B621DD900F2FE32 /* MMNoteCollectionViewController.swift */; };
 		B270041A1B60ECCB00B1BEA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27004191B60ECCB00B1BEA7 /* AppDelegate.swift */; };
 		B270041F1B60ECCB00B1BEA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B270041D1B60ECCB00B1BEA7 /* Main.storyboard */; };
 		B27004211B60ECCB00B1BEA7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B27004201B60ECCB00B1BEA7 /* Images.xcassets */; };
@@ -37,11 +37,11 @@
 		29AA4E1A946FF369227E6AAF /* libPods-Memo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Memo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A6F8D927F4A9A46ECBDB276 /* Pods-Memo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Memo/Pods-Memo.release.xcconfig"; sourceTree = "<group>"; };
 		ADE2D46E64A63F19BE8C7817 /* Pods-Memo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Memo/Pods-Memo.debug.xcconfig"; sourceTree = "<group>"; };
+		B201C2901B660FF8004CA10C /* MMNoteCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMNoteCollectionViewController.swift; sourceTree = "<group>"; };
+		B201C2941B660FF8004CA10C /* Note.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Note.storyboard; sourceTree = "<group>"; };
+		B201C2991B66109E004CA10C /* NoteList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = NoteList.plist; path = Memo/Module/Note/NoteList.plist; sourceTree = SOURCE_ROOT; };
 		B24623D31B61D93F00F2FE32 /* MMTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMTabBarController.swift; sourceTree = "<group>"; };
 		B24623D51B61DA3E00F2FE32 /* MMNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMNavigationController.swift; sourceTree = "<group>"; };
-		B24623DD1B61E99100F2FE32 /* MMNoteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMNoteTableViewController.swift; sourceTree = "<group>"; };
-		B24623DE1B61E99100F2FE32 /* Note.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Note.storyboard; sourceTree = "<group>"; };
-		B24623E11B621DD900F2FE32 /* MMNoteCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMNoteCollectionViewController.swift; sourceTree = "<group>"; };
 		B27004141B60ECCB00B1BEA7 /* Memo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27004181B60ECCB00B1BEA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B27004191B60ECCB00B1BEA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +109,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B201C28F1B660FF8004CA10C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B201C2901B660FF8004CA10C /* MMNoteCollectionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B201C2921B660FF8004CA10C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B201C2931B660FF8004CA10C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B201C2941B660FF8004CA10C /* Note.storyboard */,
+				B201C2991B66109E004CA10C /* NoteList.plist */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		B201C2951B660FF8004CA10C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B24623D21B61D93F00F2FE32 /* MainFrame */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,9 +152,10 @@
 		B24623DC1B61E99100F2FE32 /* Note */ = {
 			isa = PBXGroup;
 			children = (
-				B24623DD1B61E99100F2FE32 /* MMNoteTableViewController.swift */,
-				B24623E11B621DD900F2FE32 /* MMNoteCollectionViewController.swift */,
-				B24623DE1B61E99100F2FE32 /* Note.storyboard */,
+				B201C28F1B660FF8004CA10C /* Controller */,
+				B201C2921B660FF8004CA10C /* Model */,
+				B201C2931B660FF8004CA10C /* Source */,
+				B201C2951B660FF8004CA10C /* View */,
 			);
 			path = Note;
 			sourceTree = "<group>";
@@ -269,10 +301,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B24623E01B61E99100F2FE32 /* Note.storyboard in Resources */,
+				B201C2981B660FF8004CA10C /* Note.storyboard in Resources */,
 				B270041F1B60ECCB00B1BEA7 /* Main.storyboard in Resources */,
 				B27004241B60ECCB00B1BEA7 /* LaunchScreen.xib in Resources */,
 				B27004211B60ECCB00B1BEA7 /* Images.xcassets in Resources */,
+				B201C29A1B66109E004CA10C /* NoteList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,11 +356,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B24623E21B621DD900F2FE32 /* MMNoteCollectionViewController.swift in Sources */,
 				B270041A1B60ECCB00B1BEA7 /* AppDelegate.swift in Sources */,
+				B201C2961B660FF8004CA10C /* MMNoteCollectionViewController.swift in Sources */,
 				B24623D61B61DA3E00F2FE32 /* MMNavigationController.swift in Sources */,
 				2085DAC31B6141F0003A8263 /* MMTouchLockSplashViewController.swift in Sources */,
-				B24623DF1B61E99100F2FE32 /* MMNoteTableViewController.swift in Sources */,
 				B24623D41B61D93F00F2FE32 /* MMTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
