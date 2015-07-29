@@ -20,7 +20,7 @@ class MMNoteLayout: UICollectionViewFlowLayout {
     let offset = self.collectionView!.contentOffset
     var attrsArray = NSMutableArray(array: super.layoutAttributesForElementsInRect(rect)!)
     let topMinY = -collectionView!.contentInset.top
-    let bottomMaxY = collectionView!.contentSize.height + collectionView!.contentInset.bottom - UIScreen.mainScreen().bounds.height
+   let bottomMaxY = collectionView!.contentSize.height + collectionView!.contentInset.bottom - UIScreen.mainScreen().bounds.height
     
     if offset.y < topMinY {
       let headerSize = self.headerReferenceSize
@@ -44,6 +44,7 @@ class MMNoteLayout: UICollectionViewFlowLayout {
         }
       }
     }
+    println("offset is \(offset.y), collectionView contentSize is \(collectionView?.contentSize.height)")
     if offset.y > bottomMaxY {
       let headerSize = self.headerReferenceSize
       let deltaY = fabsf(Float(offset.y - bottomMaxY))
@@ -60,7 +61,8 @@ class MMNoteLayout: UICollectionViewFlowLayout {
             //            }
           }else {
             var headerRect = attrs.frame
-            headerRect.origin.y = CGFloat(Float(headerRect.origin.y) + deltaY * Float(attrs.indexPath.section))
+//            headerRect.origin.y = CGFloat(Float(headerRect.origin.y) + deltaY * Float(attrs.indexPath.section))
+            headerRect.origin.y = collectionView!.contentSize.height - 10 - CGFloat(deltaY) * CGFloat(collectionView!.numberOfSections() - attrs.indexPath.section) - CGFloat(20) * CGFloat(collectionView!.numberOfSections() - attrs.indexPath.section - 1) - CGFloat(44) * CGFloat(collectionView!.numberOfSections() - attrs.indexPath.section)
             attrs.frame = headerRect
           }
         }
