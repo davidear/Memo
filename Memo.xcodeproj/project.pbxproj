@@ -12,6 +12,7 @@
 		B201C2961B660FF8004CA10C /* MMNoteCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201C2901B660FF8004CA10C /* MMNoteCollectionViewController.swift */; };
 		B201C2981B660FF8004CA10C /* Note.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B201C2941B660FF8004CA10C /* Note.storyboard */; };
 		B201C29A1B66109E004CA10C /* NoteList.plist in Resources */ = {isa = PBXBuildFile; fileRef = B201C2991B66109E004CA10C /* NoteList.plist */; };
+		B22594C81B6A15AD0065BDF7 /* MMNoteEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22594C71B6A15AD0065BDF7 /* MMNoteEditViewController.swift */; };
 		B24623D41B61D93F00F2FE32 /* MMTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24623D31B61D93F00F2FE32 /* MMTabBarController.swift */; };
 		B24623D61B61DA3E00F2FE32 /* MMNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24623D51B61DA3E00F2FE32 /* MMNavigationController.swift */; };
 		B270041A1B60ECCB00B1BEA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27004191B60ECCB00B1BEA7 /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 		B201C2901B660FF8004CA10C /* MMNoteCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMNoteCollectionViewController.swift; sourceTree = "<group>"; };
 		B201C2941B660FF8004CA10C /* Note.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Note.storyboard; sourceTree = "<group>"; };
 		B201C2991B66109E004CA10C /* NoteList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = NoteList.plist; path = Memo/Module/Note/NoteList.plist; sourceTree = SOURCE_ROOT; };
+		B22594C71B6A15AD0065BDF7 /* MMNoteEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMNoteEditViewController.swift; sourceTree = "<group>"; };
 		B24623D31B61D93F00F2FE32 /* MMTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMTabBarController.swift; sourceTree = "<group>"; };
 		B24623D51B61DA3E00F2FE32 /* MMNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMNavigationController.swift; sourceTree = "<group>"; };
 		B27004141B60ECCB00B1BEA7 /* Memo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				B201C2901B660FF8004CA10C /* MMNoteCollectionViewController.swift */,
+				B22594C71B6A15AD0065BDF7 /* MMNoteEditViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -164,8 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				B27004161B60ECCB00B1BEA7 /* Memo */,
-				B270042C1B60ECCB00B1BEA7 /* MemoTests */,
 				B27004151B60ECCB00B1BEA7 /* Products */,
+				B270042C1B60ECCB00B1BEA7 /* MemoTests */,
 				406FF9D28C3AB5B0B865B71E /* Pods */,
 				7CFEA80F2C73C6BC4FF955C2 /* Frameworks */,
 			);
@@ -360,6 +363,7 @@
 				B201C2961B660FF8004CA10C /* MMNoteCollectionViewController.swift in Sources */,
 				B24623D61B61DA3E00F2FE32 /* MMNavigationController.swift in Sources */,
 				2085DAC31B6141F0003A8263 /* MMTouchLockSplashViewController.swift in Sources */,
+				B22594C81B6A15AD0065BDF7 /* MMNoteEditViewController.swift in Sources */,
 				B24623D41B61D93F00F2FE32 /* MMTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
