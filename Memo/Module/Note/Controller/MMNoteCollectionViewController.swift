@@ -20,7 +20,7 @@ class MMNoteLayout: UICollectionViewFlowLayout {
     let offset = self.collectionView!.contentOffset
     var attrsArray = NSMutableArray(array: super.layoutAttributesForElementsInRect(rect)!)
     let topMinY = -collectionView!.contentInset.top
-   let bottomMaxY = collectionView!.contentSize.height + collectionView!.contentInset.bottom - UIScreen.mainScreen().bounds.height
+   let bottomMaxY = max(collectionView!.contentSize.height + collectionView!.contentInset.bottom - UIScreen.mainScreen().bounds.height, 0)
     
     if offset.y < topMinY {
       let headerSize = self.headerReferenceSize
