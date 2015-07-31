@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import VENTouchLock
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

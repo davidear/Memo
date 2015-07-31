@@ -131,10 +131,11 @@ class MMNoteLayout: UICollectionViewFlowLayout {
     }
     
     // MARK: UICollectionViewDelegate
-//    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
 //      let noteEditVC = self.storyboard!.instantiateViewControllerWithIdentifier("NoteEditViewController") as! MMNoteEditViewController
-//      self.navigationController!.pushViewController(noteEditVC, animated: true)
-//    }
+      let noteEditVC = MMNoteEditViewController()
+      self.navigationController!.pushViewController(noteEditVC, animated: true)
+    }
     
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking

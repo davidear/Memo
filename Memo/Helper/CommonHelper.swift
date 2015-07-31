@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import MBProgressHUD
 
 class CommonHelper: NSObject {
   //MARK:- HUD

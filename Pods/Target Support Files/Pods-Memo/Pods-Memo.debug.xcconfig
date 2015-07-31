@@ -1,6 +1,9 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_FRAMEWORK_BUILD_PATH"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Colours" "${PODS_ROOT}/Headers/Public/MBProgressHUD" "${PODS_ROOT}/Headers/Public/SSKeychain" "${PODS_ROOT}/Headers/Public/VENTouchLock"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Colours" -isystem "${PODS_ROOT}/Headers/Public/MBProgressHUD" -isystem "${PODS_ROOT}/Headers/Public/SSKeychain" -isystem "${PODS_ROOT}/Headers/Public/VENTouchLock"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-Memo-Colours" -l"Pods-Memo-MBProgressHUD" -l"Pods-Memo-SSKeychain" -l"Pods-Memo-VENTouchLock" -framework "CoreGraphics" -framework "Foundation" -framework "LocalAuthentication" -framework "Security"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_FRAMEWORK_BUILD_PATH/Colours.framework/Headers" -iquote "$PODS_FRAMEWORK_BUILD_PATH/MBProgressHUD.framework/Headers" -iquote "$PODS_FRAMEWORK_BUILD_PATH/SSKeychain.framework/Headers" -iquote "$PODS_FRAMEWORK_BUILD_PATH/SnapKit.framework/Headers" -iquote "$PODS_FRAMEWORK_BUILD_PATH/VENTouchLock.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -ObjC -framework "Colours" -framework "MBProgressHUD" -framework "SSKeychain" -framework "SnapKit" -framework "VENTouchLock"
 OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
+PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-Memo
 PODS_ROOT = ${SRCROOT}/Pods

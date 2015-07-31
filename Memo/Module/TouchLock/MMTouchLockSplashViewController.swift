@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import VENTouchLock
 class MMTouchLockSplashViewController: VENTouchLockSplashViewController {
   
   override func viewDidLoad() {

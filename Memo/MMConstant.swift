@@ -7,5 +7,6 @@
 //
 
 import Foundation
+import UIKit
 let TopicColor = "0x56abe4"
 let APP = UIApplication.sharedApplication()
