@@ -12,7 +12,7 @@ class CommonHelper: NSObject {
   //MARK:- HUD
   // 显示提示信息
   func showMsg(message: String) {
-    let hud = self.HUD()
+    let hud = CommonHelper.HUD()
     hud.labelText = message
     hud.mode = MBProgressHUDMode.Text
     hud.labelFont = UIFont.systemFontOfSize(13)
@@ -22,7 +22,7 @@ class CommonHelper: NSObject {
   
   // 显示加载中...
   func showLoading(message: String?) {
-    let hud = self.HUD()
+    let hud = CommonHelper.HUD()
     hud.labelText = message
     hud.mode = MBProgressHUDMode.Text
     hud.labelFont = UIFont.systemFontOfSize(13)
@@ -36,7 +36,7 @@ class CommonHelper: NSObject {
   }
   
   //MARK: PRIVATE
-  private func HUD() ->MBProgressHUD {
+  private class func HUD() ->MBProgressHUD {
     var hud = MBProgressHUD(forView: APP.keyWindow!)
     if hud != nil {
       hud .removeFromSuperview()
